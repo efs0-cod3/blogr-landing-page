@@ -1,0 +1,126 @@
+:root {
+    /* primary */
+
+    /*(CTA text) */
+    --lightRed: hsl(356, 100%, 66%);
+    /* (CTA hover background) */
+    --veryLightRed: hsl(355, 100%, 74%);
+    /* (headings) */
+    --veryDarkBlue: hsl(208, 49%, 24%);
+
+    /* neutral */
+
+    /* (headings) */
+    --White: hsl(0, 0%, 100%);
+    /* (footer text) */
+    --grayishBlue: hsl(240, 2%, 79%);
+    /* (body copy) */
+    --veryDarkGrayishBlue: hsl(207, 13%, 34%);
+    /* (footer background) */
+    --veryDarkBlackBlue: hsl(240, 10%, 16%);
+
+    /* Background gradient - Intro/CTA mobile nav: */
+    --gVeryLightRed: hsl(13, 100%, 72%);
+    --gLightRed: hsl(353, 100%, 62%);
+
+    /* Background gradient - body: */
+    --gVeryDarkGrayBlue: hsl(237, 17%, 21%);
+    --gVeryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+}
+
+html {
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color:var(--veryDarkBlue) ;
+}
+main {
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%)), url(../images/bg-pattern-intro-mobile.svg);
+    border-radius: 0 0 0 50px;
+    padding: 40px 20px;
+
+}
+
+.nav__main-section {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+
+.nav__logo,
+.nav__ham,
+.nav__close-modal {
+    width: 80%;
+}
+
+.nav__main-ham {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* remove and show modal oppener */
+.nav__close-modal--deactive {
+    display: none;
+}
+
+.nav__show-modal--active {
+    display: none;
+}
+
+.main-info {
+    text-align: center;
+    color: var(--White);
+}
+
+.nav__menu {
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+.colapse{
+    display: block;
+    text-align: center;
+}
+.colapse input {
+    position: absolute;
+    left: -9999px;
+}
+
+.list__title:hover {
+    cursor: pointer;
+}
+
+.product__list{
+    opacity: 0;
+    height: 0;
+    width: auto;
+    background: var(--grayishBlue);
+    font-size: 1.8rem;
+    border-radius: 5px;
+    transition: opacity .1s ease-in-out, height 1s ease-in-out;
+
+}
+.colapse input:checked~.product__list{
+    opacity: 1;
+    height: auto;
+    padding: 10px;
+    transition: opacity .1s ease-in-out, height 1s ease-in-out .2s;
+}
+
+
+
+
+
+h1 {
+    font-size: 2rem;
+}
