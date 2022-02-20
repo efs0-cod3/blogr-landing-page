@@ -20,17 +20,6 @@
 
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -49,53 +38,53 @@
             </a></section>
         </section>
       </section>
-      <section class="nav__menu">
+      <section class="nav__menu ">
         <section class="menu">
 
-            <label for="checka" class="colapse">
-              <input name="checkb" type="checkbox" id="checka" value="Product">
-              <h2 class="list__title">Product</h2>
-            
-              <section class="product__list">
-                <p><a href="#"> Overview</a></p>
-                <p><a href="#"> Pricing</a></p>
-                <p><a href="#"> Marketplace</a></p>
-                <p><a href="#"> Features</a></p>
-                <p><a href="#"> Integrations</a></p>
-              </section>
-            </label>
-            
-            <label for="checkb" class="colapse">
-              <input name="checkb" type="checkbox" id="checkb" value="Product">
-              <h2 class="list__title">Company</h2>
-            
-              <section class="product__list">
-                <p><a href="#">About</a></p>
-                <p><a href="#">Team</a></p>
-                <p><a href="#">Blog<a></p>
-                <p><a href="#">Careers</a></p>
-              </section>
-            </label>
-            
-            <label for="checkc" class="colapse">
-              <input name="checkb" type="checkbox" id="checkc" value="Product">
-              <h2 class="list__title">Connect</h2>
-            
-              <section class="product__list">
-                <p><a href="#">Contact</a></p>
-                <p><a href="#">Newsletter</a></p>
-                <p><a href="#">LinkedIn</a></p>
+          <label for="checka" class="colapse">
+            <input name="checkb" type="checkbox" id="checka" value="Product">
+            <h2 class="list__title">Product <i class='bx bx-chevron-down'></i></h2>
 
-              </section>
-            </label>
+            <section class="product__list">
+              <p><a href="#"> Overview</a></p>
+              <p><a href="#"> Pricing</a></p>
+              <p><a href="#"> Marketplace</a></p>
+              <p><a href="#"> Features</a></p>
+              <p><a href="#"> Integrations</a></p>
+            </section>
+          </label>
+
+          <label for="checkb" class="colapse">
+            <input name="checkb" type="checkbox" id="checkb" value="Product">
+            <h2 class="list__title">Company <i class='bx bx-chevron-down'></i></h2>
+
+            <section class="product__list">
+              <p><a href="#">About</a></p>
+              <p><a href="#">Team</a></p>
+              <p><a href="#">Blog<a></p>
+              <p><a href="#">Careers</a></p>
+            </section>
+          </label>
+
+          <label for="checkc" class="colapse">
+            <input name="checkb" type="checkbox" id="checkc" value="Product">
+            <h2 class="list__title">Connect <i class='bx bx-chevron-down'></i></h2>
+
+            <section class="product__list">
+              <p><a href="#">Contact</a></p>
+              <p><a href="#">Newsletter</a></p>
+              <p><a href="#">LinkedIn</a></p>
+
+            </section>
+          </label>
 
         </section>
-    
-      <section class="menu__cta">
-        <a href="#">Login</a>
 
-        <a href="#">Sign Up</a>
-      </section>
+        <section class="menu__cta">
+          <a href="#">Login</a>
+
+          <a href="#">Sign Up</a>
+        </section>
       </section>
 
 
@@ -105,119 +94,136 @@
     <section class="main-info">
       <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
-      <a href="#">Start for Free</a>
-      <a href="#">Learn More</a>
+      <section class="cta">
+        <a href="#">Start for Free</a>
+        <a href="#">Learn More</a>
+      </section>
     </section>
   </main>
 
-  <section>
-    <article>
-      <h2>Designed for the future</h2>
+  <section class="future">
+    <article class="articleOne">
+      <section class="tSection">
+        <h2 class="bTitle">Designed for the future</h2>
+      </section>
 
-      <h3>Introducing an extensible editor</h3>
-      <p>
-        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-        change the looks of a blog.
-      </p>
-    </article>
+      <img class="ed-mobile" src="images/illustration-editor-mobile.svg" alt="">
 
-    <article>
-      <h3>
-        Robust content management
-      </h3>
+      <section class="text-sec">
+        <article>
+          <h3 class="abTitle in">Introducing an extensible editor</h3>
+          <p class="grayP">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            change the looks of a blog.
+          </p>
+        </article>
 
-      <p>
-        Flexible content management enables users to easily move through posts. Increase the usability of your blog
-        by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
-      </p>
-    </article>
+        <article class="articleTwo">
+          <h3 class="abTitle">
+            Robust content management
+          </h3>
+
+          <p class="grayP">
+            Flexible content management enables users to easily move through posts. Increase the usability of your
+            blog
+            by adding customized categories, sections, format, or flow. With this functionality, you're in full
+            control.
+          </p>
+        </article>
+      </section>
+  </section>
+  </section>
+
+  <section class="ilPhones">
 
   </section>
-  <section>
-    <h2>
-      State of the Art Infrastructure
-    </h2>
-    <p>
-      With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-    </p>
 
   </section>
-  <section>
-    <article>
-      <h3>
+  <section class="state">
+    <article class="articleThree">
+      <section class="article-text">
+        <h2 class="wTitle">
+          State of the Art Infrastructure
+        </h2>
+        <p class="whiteP">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </section>
+    </article>
+  </section>
+
+  <section class="free">
+    <section class="laptop">
+      <img class="laptopImg" src="images/illustration-laptop-mobile.svg" alt="">
+    </section>
+    <article class="free-art">
+      <h2 class="abTitle">
         Free, open, simple
-      </h3>
-      <p>
+      </h2>
+      <p class="grayP">
         Blogr is a free and open source application backed by a large community of helpful developers. It supports
         features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
         and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
       </p>
-
-    </article>
-    <article>
-      <h3>
+  <article>
+      <h2 class="abTitle">
         Powerful tooling
-      </h3>
-      <p>
+      </h2>
+      <p class="grayP">
         Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
         breeze, but
         capable of producing even the most complicated sites.
       </p>
     </article>
+    </article>
+   
   </section>
 
-  <footer>
-    <section>
+  <footer class="footer">
+    <section class="logo__img">
       <img src="images/logo.svg" alt="logo">
     </section>
-    <section>
-      <a href="#">Product</a>
-      <ul>
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Marketplace</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Integrations</a></li>
-      </ul>
-    </section>
-    <section>
-      <a href="#">Product</a>
-      <ul>
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Marketplace</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Integrations</a></li>
-      </ul>
+    <section class="foo__list">
+      <section class="footer-sec">
+        <h2 class="footer_list_title">Product</h2>
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-sec">
+        <h2 class="footer_list_title">Company</h2>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-sec">
+        <h2 class="footer_list_title">Connect</h2>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </section>
     </section>
 
-    <section>
-      <a href="#">Connect</a>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <a href="#">Connect</a>
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
-    </section>
   </footer>
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Erick "efs0" Félix</a>.
   </div>
+
 </body>
 
 </html>
